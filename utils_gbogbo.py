@@ -3,15 +3,13 @@ Module: utils_gbogbo
 
 Purpose: Reusable Module for My Analytics Projects
 
-Description: This module provides a byline for my analytics projects. 
-When we work hard to write useful code, we want it to be reusable.
-A good byline could be used in every Python analytics project we do.
+Description: This module provides a byline for my analytic company Gbogbo Analytics. 
+When we work hard to write useful code, we want it to be reusable and that is what Gbogbo Analytics does best.
+A good byline ensure the great quality work that is done here at Gbogbo Analytics to maintain customer satisfaction.
 
 Author: Elom Gbogbo
 
 """
-
-
 #####################################
 # Import Modules
 #####################################
@@ -57,8 +55,6 @@ mean_score_employee: float = statistics.mean(employee_satisfication_scores)
 stdev_score_employee: float = statistics.stdev(employee_satisfication_scores)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the text in the byline to fit your information
-# TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
 Gbogbo Analytics: Delivering Professional Insights
@@ -133,4 +129,4 @@ def main() -> None:
 if __name__ == '__main__':
     main()
 
-#TODO: Run this as a script and verify all code works as intended.
+
