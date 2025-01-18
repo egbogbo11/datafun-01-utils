@@ -46,11 +46,15 @@ client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 employee_satisfication_scores: list = [4.0, 4.0, 3.3, 4.2, 5.0, 3.9]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
 min_score: float = min(client_satisfaction_scores)  
 max_score: float = max(client_satisfaction_scores)  
 mean_score: float = statistics.mean(client_satisfaction_scores)  
 stdev_score: float = statistics.stdev(client_satisfaction_scores)
+
+min_score_employee: float = min(employee_satisfication_scores)  
+max_score_employee: float = max(employee_satisfication_scores)  
+mean_score_employee: float = statistics.mean(employee_satisfication_scores)  
+stdev_score_employee: float = statistics.stdev(employee_satisfication_scores)
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
@@ -59,14 +63,22 @@ byline: str = f"""
 ---------------------------------------------------------
 Gbogbo Analytics: Delivering Professional Insights
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
+Has International Clients:    {has_international_clients}
+Is Privately Held:            {is_privately_held}
+Years in Operation:           {years_in_operation}
+Number of Employees:          {number_of_employees}
+Skills Offered:               {skills_offered}
+Tools Used:                   {tools_used}
+Client Satisfaction Scores:   {client_satisfaction_scores}
+Employee Satisfaction Scores: {employee_satisfication_scores}
+Minimum Satisfaction Score:   {min_score}
+Maximum Satisfaction Score:   {max_score}
+Minimum Satisfaction Score for Employees: {min_score_employee}
+Maximum Satisfaction Score for Employees: {max_score_employee}
+Mean Satisfaction Score:       {mean_score:.2f}
+Mean Satisfaction Score for Employees: {mean_score_employee}
 Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Standard Deviation of Employee Satisfaction Scores: {stdev_score_employee}
 """
 
 #####################################
