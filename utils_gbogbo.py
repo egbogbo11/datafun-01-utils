@@ -39,7 +39,7 @@ average_employee_satisfaction: float = 4.1
 
 # declare a list of strings
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
-tools_used: ["SQL", "GitHub", "Python"]
+tools_used: list = ["SQL", "GitHub", "Python"]
 
 # declare a list of numbers so we can illustrate statistics skills
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
